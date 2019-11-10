@@ -7,10 +7,12 @@ read -p "Enter project author email: " project_author_email
 
 
 sed -i "s~PROJECT_NAME~$project_name~g" Makefile setup.cfg pyproject.toml
+sed -i "s~PROJECT_NAME~$project_name~g" PROJECT_DIR/__init__.py
 sed -i "s~PROJECT_AUTHOR_NAME~$project_author_name~g" pyproject.toml
 sed -i "s~PROJECT_AUTHOR_EMAIL~$project_author_email~g" pyproject.toml
 sed -i "s~PROJECT_DESCRIPTION~$project_description~g" pyproject.toml
 
+mv PROJECT_DIR $project_name
 rm init_project.sh
 rm -rf .git
 cd ..
