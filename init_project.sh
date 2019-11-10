@@ -12,4 +12,5 @@ sed -i "s~PROJECT_AUTHOR_EMAIL~$project_author_email~g" pyproject.toml
 sed -i "s~PROJECT_DESCRIPTION~$project_description~g" pyproject.toml
 
 rm init_project.sh
+rm -rf .git
 
