@@ -13,4 +13,6 @@ sed -i "s~PROJECT_DESCRIPTION~$project_description~g" pyproject.toml
 
 rm init_project.sh
 rm -rf .git
+cd ..
+mv python-blank $project_name
 
